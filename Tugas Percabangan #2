@@ -1,0 +1,64 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  int belanja;
+  int batas_belanja = 1102019;
+  int harga;
+  
+  cout<<"\nMasukkan status anda (Menikah 'M' atau Belum Menikah 'BM' : ";
+  string status;
+  cin>>status;
+  cout<<"\n Apakah anda sudah mempunyai anak (YA atau TIDAK) = ";
+  string anak;
+  cin>>anak;
+  cout<<"\n Apakah anda mempunyai kartu anggota (YA atau TIDAK) = ";
+  string kartu_anggota;
+  cin>>kartu_anggota;
+  cout<<"\nTotal belanja anda = ";
+  cin>>belanja;
+
+  if (anak=="M" && belanja>=batas_belanja)
+  {
+    if (anak=="YA"
+    {
+      cout<<"\nDiskon 75%"<endl;
+      harga=belanja - (belanja * 0.75);
+    }
+      cout<<"\nDiskon 50%"<endl;
+      harga=belanja - (belanja * 0.50);
+    }
+  }
+  else
+  {
+    if (kartu_anggota=="YA"&& belanja>=batas_belanja
+      {
+      cout<<"\nDiskon 25%"<<endl;
+      harga=belanja - (belanja * 0.25);
+      }
+    else {
+      harga=belanja;
+    }
+  }
+  
+  cout<<"\nTotal yang harus dibayar adalah Rp. "<<harga<<endl;
+  cout<<"\nApakah anda berasal dari Makassar (YA atau TIDAK): ";
+  string asal;
+  cin>>asal;
+  
+  if (asal=="TIDAK")
+  {
+    cout<<"\nAnda mendapatkan tambahan diskon 10%";
+    harga=harga - (harga * 0.10);
+  }
+  else
+  {
+    harga=harga;
+  }
+  cout<<"\nHarga keseluruhan dari total belanja adalah adalah Rp."<<harga<<endl;
+    
+    return 0;
+  }
+  
+    
